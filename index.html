@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+<!--Titulo do site-->
+    <header>
+        <h1>Conversor de Moedas</h1>
+    </header>
+
+    <!--Corpo do site-->
+    <section class="formulario" id="corpo">
+
+        <!--Formulario-->
+        <section class="sesao">
+
+            <!--Entrada pro valor da conversão-->
+            <div class="campo">
+                <label for="valor">Valor</label>
+                <input type="text" name="valor" id="valor" class="valor">
+            </div>
+
+            <!--Select "CONVERTER DE" de moedas-->
+            <div class="campo">
+                <label for="lista1">Converter de</label>
+                <select name="lista1" class="lista" id="lista1">
+                    <option value="BRL">BRL / Real / R$</option>
+                    <option value="USD">USD / Dolar / &dollar;</option>
+                    <option value="EUR">EUR / Euro / &euro;</option>
+                </select>
+            </div>
+
+            <!--Botao pra inver a ordem de conversão-->
+            <button name="inverter" id="inverter" class="trocar">&#8646</button>
+
+            <!--Select "PARA" de moedas-->
+            <div class="campo">
+                <label for="lista2">Para</label>
+                <select name="lista2" class="lista" id="lista2">
+                    <option value="USD">USD / Dolar / &dollar;</option>
+                    <option value="EUR">EUR / Euro / &euro;</option>
+                    <option value="BRL">BRL / Real / R$</option>
+                </select>
+            </div>
+
+            <!--Botão que faz a conversão do valor-->
+            <button name="converter" id="converter" class="converter">&#10227</button>
+            
+        </section>
+
+        <!--resultado das conversões-->
+        <div class="resultado" id="divResposta">
+
+        </div>
+    </section>
+    
+</body>
+</html>

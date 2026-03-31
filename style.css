@@ -1,0 +1,80 @@
+body{
+    font: normal 18pt Arial;
+    background-color: aliceblue;
+    justify-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: rgba(143, 143, 143, 0.315);
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.178);
+}
+
+.sesao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.lista, .valor{
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 170px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.valor{
+    justify-items: right;
+    padding-right: 15px;
+}
+
+.lista:focus, .valor:focus{
+    outline: 3px solid rgba(63, 185, 255, 0.507);
+}
+
+.campo{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trocar, .converter{
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.resultado{
+    font-weight: normal;
+    font-size: 14pt;
+    margin-top: 40px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    justify-self: left;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
